@@ -48,18 +48,18 @@ var menuJson = {
 		 "submenu":[
 			{"title":{"EN":"submenu1","ES":"submenu1"},"icon":"flaticon-laptop","url":"index.html", "dashboard":{}},
 			{"title":{"EN":"submenu2","ES":"submenu2"},"icon":"flaticon-comment","url":"index.html", "dashboard":{}},
-			{"title":{"EN":"Dashboard 1","ES":"Dashboard"},"icon":"flaticon-calendar-1","url":"", "dashboard":{"src":"https://lab.onesaitplatform.com/controlpanel/dashboards/view/MASTER-Dashboard-3/","title":"Dashboard Example", "background": "", "height": "850px", "mode": "INSERT"}}
+			{"title":{"EN":"Dashboard 1","ES":"Dashboard"},"icon":"flaticon-calendar-1","url":"", "dashboard":{"src":"https://development.onesaitplatform.com/controlpanel/dashboards/view/MASTER-Dashboard-3/","title":"Dashboard Example", "background": "", "height": "850px", "mode": "INSERT"}}
 		 ]
 		},
 		{"title":{"EN":"menu2","ES":"menu2"},"icon":"flaticon-calendar","url":"",
 		 "submenu":[
 			{"title":{"EN":"submenu21","ES":"submenu21"},"icon":"flaticon-laptop","url":"index.html", "dashboard":{}},
 			{"title":{"EN":"submenu22","ES":"submenu22"},"icon":"flaticon-comment","url":"index.html", "dashboard":{}},
-			{"title":{"EN":"Dashboard 3","ES":"Dashboard 3"},"icon":"flaticon-calendar-1","url":"", "dashboard":{"src":"https://lab.onesaitplatform.com/controlpanel/dashboards/view/MASTER-Dashboard-2/","title":"Dashboard Example", "background": "", "height": "850px", "mode": "INSERT"}}			
+			{"title":{"EN":"Dashboard 3","ES":"Dashboard 3"},"icon":"flaticon-calendar-1","url":"", "dashboard":{"src":"https://development.onesaitplatform.com/controlpanel/dashboards/view/MASTER-Dashboard-2/","title":"Dashboard Example", "background": "", "height": "850px", "mode": "INSERT"}}			
 		 ]
 		},
 		{"title":{"EN":"Management","ES":"Configuración"},"icon":"","url":"","submenu":[], "dashboard":{}},//separator url, src ""
-		{"title":{"EN":"Private Dashboard 2","ES":"Private Dashboard2"},"icon":"flaticon-laptop","url":"","submenu":[], "dashboard":{src:"https://lab.onesaitplatform.com/controlpanel/dashboards/view/MASTER-Dashboard-1/","title":"Dashboard Private Example 2", "background": "", "height": "850px", "mode": "INSERT"}},
+		{"title":{"EN":"Private Dashboard 2","ES":"Private Dashboard2"},"icon":"flaticon-laptop","url":"","submenu":[], "dashboard":{src:"https://development.onesaitplatform.com/controlpanel/dashboards/view/MASTER-Dashboard-1/","title":"Dashboard Private Example 2", "background": "", "height": "850px", "mode": "INSERT"}},
 		{"title":{"EN":"menu 3","ES":"menu3"},"icon":"flaticon-layers","url":"index.html","submenu":[], "dashboard":{}},
 		{"title":{"EN":"Menu 4","ES":"Menu 4"},"icon":"flaticon-clipboard","url":"index.html","submenu":[], "dashboard":{}}
 	]	
@@ -218,8 +218,8 @@ var mainJson = {
 		"urlBasePath": "",
 		"imgBasePath": "assets/app/media/img/",
 		"entry": "PUBLIC",
-		"urlBase":"https://lab.onesaitplatform.com",
-		"urlApi": "https://lab.onesaitplatform.com/api-manager/server/api"
+		"urlBase":"https://development.onesaitplatform.com",
+		"urlApi": "https://development.onesaitplatform.com/api-manager/server/api"
 	},
 	"app": {
 		"appLogo": "assets/app/media/img/logos/onesait.png",
@@ -277,7 +277,7 @@ var mainJson = {
 			"dashboardName": "OpenFlights Data dashboard",
 			"changeTitle": true,
 			"notification": false,
-			"src": "https://lab.onesaitplatform.com/controlpanel/dashboards/view/MASTER-Dashboard-2",
+			"src": "https://development.onesaitplatform.com/controlpanel/dashboards/view/MASTER-Dashboard-2",
 			"background": "#FFF",
 			"height": "875px",
 			"mode": "INSERT"

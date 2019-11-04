@@ -60,7 +60,7 @@ var MenuController = function(){
 		if ( menuJson.home ) {
 			// change data-src for src in application-config content dashboard.
 			home_HTML =  '<li class="m-menu__item start" aria-haspopup="true" m-menu-link-redirect="1">' 
-						+'	<a href="index.html" data-src="https://lab.onesaitplatform.com/controlpanel/dashboards/viewiframe/MASTER-Dashboard-2" class="m-menu__link "><i class="m-menu__link-icon flaticon-dashboard"></i><span class="m-menu__link-text">Home</span></a>'
+						+'	<a href="index.html" data-src="https://development.onesaitplatform.com/controlpanel/dashboards/viewiframe/MASTER-Dashboard-2" class="m-menu__link "><i class="m-menu__link-icon flaticon-dashboard"></i><span class="m-menu__link-text">Home</span></a>'
 						+'</li>';
 			markUp_HTML += home_HTML;
 		}

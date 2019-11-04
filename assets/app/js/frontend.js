@@ -561,7 +561,7 @@ var FrontendController = function() {
 		
 		if (isDashboard){
 			// DASHBOARD ITEM			
-			//"title":"Private Dashboard 2","dashboard":{"src":"https://lab.onesaitplatform.com/controlpanel/dashboards/viewiframe/2730c859-6a69-4b5c-af94-3eac4abd851d","title":"Dashboard Private Example 2","background":"","height":"850px","mode":"INSERT"}}
+			//"title":"Private Dashboard 2","dashboard":{"src":"https://development.onesaitplatform.com/controlpanel/dashboards/viewiframe/2730c859-6a69-4b5c-af94-3eac4abd851d","title":"Dashboard Private Example 2","background":"","height":"850px","mode":"INSERT"}}
 			$('#menu-edit-alert').addClass('m--hide');	
 			$('#linkItem').addClass('m--hide');			
 			$('#menuItem').addClass('m--hide');
