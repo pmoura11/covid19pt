@@ -12,3 +12,6 @@ In application config you can configure:
 	> footer
 
 > Application Styles
+
+> Version v.1:
+	> saving configuration via API to frontendConfiguration Ontology and allow each user to get his own frontend configuration
