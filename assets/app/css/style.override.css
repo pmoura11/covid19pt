@@ -209,8 +209,9 @@ html, body {
 .m-cursor--pointer {cursor: pointer; }
 .m-widget4 .m-widget4__item .m-widget4__ext { min-width: 60px;}
 table.dataTable thead > tr { text-transform: uppercase; font-weight: 500; font-size: 11px; color: #777;}	
-.m-portlet .m-portlet__head { border-bottom: none; }	
-
+.m-portlet .m-portlet__head { border-bottom: none; }
+.m-portlet { margin-bottom: 0rem}  /* edited by Pedro Moura */
+#content-title { font-size: x-large; color: #E88AA2;}
 
 .m-widget1 .m-widget1__item .m-widget1__number {
     font-size: 1rem;

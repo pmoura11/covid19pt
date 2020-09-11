@@ -39,35 +39,112 @@
 
 // MENU JSON
 var menuJson = {
-	"menu":"OnesaitPlatform",
-	"rol":"ROLE_DEVELOPER",
-	"home": true,
-	"noSession":"login.html",
-	"navigation":[
-		{"title":{"EN":"menu1","ES":"menu1"},"icon":"flaticon-cart","url":"",
-		 "submenu":[
-			{"title":{"EN":"submenu1","ES":"submenu1"},"icon":"flaticon-laptop","url":"index.html", "dashboard":{}},
-			{"title":{"EN":"submenu2","ES":"submenu2"},"icon":"flaticon-comment","url":"index.html", "dashboard":{}},
-			{"title":{"EN":"Dashboard 1","ES":"Dashboard"},"icon":"flaticon-calendar-1","url":"", "dashboard":{"src":"https://development.onesaitplatform.com/controlpanel/dashboards/view/MASTER-Dashboard-3/","title":"Dashboard Example", "background": "", "height": "850px", "mode": "INSERT"}}
-		 ]
-		},
-		{"title":{"EN":"menu2","ES":"menu2"},"icon":"flaticon-calendar","url":"",
-		 "submenu":[
-			{"title":{"EN":"submenu21","ES":"submenu21"},"icon":"flaticon-laptop","url":"index.html", "dashboard":{}},
-			{"title":{"EN":"submenu22","ES":"submenu22"},"icon":"flaticon-comment","url":"index.html", "dashboard":{}},
-			{"title":{"EN":"Dashboard 3","ES":"Dashboard 3"},"icon":"flaticon-calendar-1","url":"", "dashboard":{"src":"https://development.onesaitplatform.com/controlpanel/dashboards/view/MASTER-Dashboard-2/","title":"Dashboard Example", "background": "", "height": "850px", "mode": "INSERT"}}			
-		 ]
-		},
-		{"title":{"EN":"Management","ES":"Configuración"},"icon":"","url":"","submenu":[], "dashboard":{}},//separator url, src ""
-		{"title":{"EN":"Private Dashboard 2","ES":"Private Dashboard2"},"icon":"flaticon-laptop","url":"","submenu":[], "dashboard":{src:"https://development.onesaitplatform.com/controlpanel/dashboards/view/MASTER-Dashboard-1/","title":"Dashboard Private Example 2", "background": "", "height": "850px", "mode": "INSERT"}},
-		{"title":{"EN":"menu 3","ES":"menu3"},"icon":"flaticon-layers","url":"index.html","submenu":[], "dashboard":{}},
-		{"title":{"EN":"Menu 4","ES":"Menu 4"},"icon":"flaticon-clipboard","url":"index.html","submenu":[], "dashboard":{}}
-	]	
+  menu: "OnesaitPlatform",
+  rol: "ROLE_DEVELOPER",
+  home: false,
+  noSession: "login.html",
+  navigation: [
+    {
+      title: {
+        EN: "Global KPIs",
+        PT: "Indicadores Gerais",
+        ES: "Datos Generales",
+      },
+      icon: "fa fa-tachometer-alt",
+      url: "",
+      submenu: [],
+      dashboard: {
+        src:
+          "https://lab.onesaitplatform.com/controlpanel/dashboards/view/09ad3288-cbfc-4160-87b6-5111c2118450",
+        title: "COVID-19 PORTUGAL",
+        background: "",
+        height: "690px",
+        mode: "INSERT",
+      },
+    },
+    {
+      title: {
+        EN: "Data by Region",
+        PT: "Dados por ARS",
+        ES: "Datos por Region",
+      },
+      icon: "fa fa-map",
+      url: "",
+      submenu: [],
+      dashboard: {
+        src:
+          "https://lab.onesaitplatform.com/controlpanel/dashboards/view/23c3d79f-b883-44ed-af78-50d110ae929c",
+        title: "Dados por Administração Regional de Saúde",
+        background: "",
+        height: "690px",
+        mode: "INSERT",
+      },
+    },
+    {
+      title: {
+        EN: "Data by County",
+        PT: "Dados por Concelho",
+        ES: "Datos por Município",
+      },
+      icon: "fa fa-map-marker-alt",
+      url: "",
+      submenu: [],
+      dashboard: {
+        src:
+          "https://lab.onesaitplatform.com/controlpanel/dashboards/view/58816d52-0b55-4144-a60f-e16372dccaba",
+        title: "Dados por Concelho",
+        background: "",
+        height: "690px",
+        mode: "INSERT",
+      },
+    },
+    {
+      title: {
+        EN: "Data by Age/sex",
+        PT: "Dados por Idade/sexo",
+        ES: "Datos por Idad/Sexo",
+      },
+      icon: "fa fa-venus-mars",
+      url: "",
+      submenu: [],
+      dashboard: {
+        src:
+          "https://lab.onesaitplatform.com/controlpanel/dashboards/view/ff688967-4c00-4e1f-8c99-f1dd108bcbc0",
+        title: "Dados por Idade e Sexo",
+        background: "",
+        height: "690px",
+        mode: "INSERT",
+      },
+    },
+    {
+      title: { EN: "", PT: "", ES: "" },
+      icon: "",
+      url: "",
+      submenu: [],
+      dashboard: {},
+    },
+    {
+      title: {
+        EN: "Other Info",
+        PT: "Outras informações",
+        ES: "Otras Informaciones",
+      },
+      icon: "fa fa-info-circle",
+      url: "",
+      submenu: [],
+      dashboard: {
+        src:
+          "https://lab.onesaitplatform.com/controlpanel/dashboards/view/d733c4d2-6856-47e6-9ebb-6f02e91beae9",
+        title: "Outras Informações",
+        background: "",
+        height: "690px",
+        mode: "INSERT",
+      },
+    },
+  ],
 };
 
 /*  ############ END MENU CONFIGURATION ############################################################################ */
-
-
 
 /*  ############ PAGE CONFIGURATION ###############################################################################
 	Version 1.0
@@ -207,97 +284,115 @@ var menuJson = {
 	- More Styling , themes, menu , footer, header...
 	
 	
-*/	
+*/
 
 // FRONTEND MAIN CONFIGURATION
 var mainJson = {
-	"title": "onesait Platform | Dashboard",
-	"description": "onesait Platform Frontend Template",
-	"currentSkin": "skin-light",
-	"access":{
-		"urlBasePath": "",
-		"imgBasePath": "assets/app/media/img/",
-		"entry": "PUBLIC",
-		"urlBase":"https://development.onesaitplatform.com",
-		"urlApi": "https://development.onesaitplatform.com/api-manager/server/api"
-	},
-	"app": {
-		"appLogo": "assets/app/media/img/logos/onesait.png",
-		"appLogoCss": "width: auto; max-height: 50px;",
-		"appLogoBackground": "background-color: #6ac7b1 !important",
-		"appHome": "onesait Platform Frontend",
-		"appLoading": "",
-		"appFooter": true,
-		"appStickymenu": false,
-		"appWelcome": false
-	},
-	"login":{
-			"loginLogo": "assets/app/media/img/logos/onesait-platform-logo.png",
-			"loginLogoStyle": "",
-			"loginBackground": "assets/app/media/img/bg/bg-3.jpg",
-			"loginDescription":"Wellcome to onesait Platform",
-			"signInTitle": "Please, sign in on onesait:",
-			"signInBtnColor": "", 
-			"signUp": false,
-			"forgotPassword": false,
-			"rememberMe": false,
-			"termsAndConditions": true,
-			"agreeInfoMsg": "Please, check the agree Privacy and Terms to access",
-			"privacyLink": "",
-			"conditionsLink":""
-	},
-	"user":{
-			"showAvatar": true,
-			"avatar": "assets/app/media/img/users/userAvatar.jpg",			
-			"profile":  {"link":"profile.html","text":"ROL","visible": false},
-			"support":  {"link":"support.html","text":"Support","visible": false},
-			"activity": {"link":"activity.html","text":"Activity","visible": false},
-			"messages": {"link":"messages.html","text":"Messages","visible": false},
-			"faq":	  {"link":"faq.html","text":"FAQ","visible": false},			
-			"logout":   {"link":"login.html","text":"Exit","visible": true}
-	},
-	"header": {
-		"headerDashboads": false,
-		"headerReports": false,
-		"headerSearch": false,
-		"headerNotifications": false,
-		"headerQuickactions": false,
-		"headerUser": true,
-		"headerSidebarToggle": false,
-		"headerSessionConfiguration": true
-	},
-	"content": {
-		"contentHead": false,
-		"contentTools": true,
-		"contentTitle": "onesait Platform Community Dashboard",
-		"contentHeadCss": "",		
-		"contentTitleCss": "",		
-		"contentDashboard": {
-			"enabled": true,
-			"dashboardName": "OpenFlights Data dashboard",
-			"changeTitle": true,
-			"notification": false,
-			"src": "https://development.onesaitplatform.com/controlpanel/dashboards/view/MASTER-Dashboard-2",
-			"background": "#FFF",
-			"height": "875px",
-			"mode": "INSERT"
-		}		
-	},
-	"footer": {
-		"footerCopyright": "2019 &copy; onesait Platform Frontend by Minsait",
-		"footerLinks": true,
-		"footerLinkAbout":  {"link":"https://www.onesaitplatformrevolution.com/","text":"About","visible": true},
-		"footerLinkPrivacy":{"link":"privacy.html","text":"Privacy","visible": true},
-		"footerLinkTerms":  {"link":"terms.html","text":"Terms","visible": true},
-		"footerLinkCompany":{"link":"https://www.minsait.com/es","text":"Mindsait","visible": true},
-		"footerLinkSupport":{"link":"support.html","text":"onesait Support Center","visible": true}		
-	},
-	"themes":{
-		"availableSkin": ["skin-light","skin-dark"],
-		"changeSkin": "skin-dark",
-		"contentBackground" : "ghostwhite",
-		"contentPadding": "0px 0px",
-		"menu": "",
-		"footerBackground": "#0f242c"
-	}
+  title: "COVID-19 Portugal | Dashboard",
+  description: "Dashboards sobre a evolução da pandemia COVID-19 em Portugal",
+  currentSkin: "skin-light",
+  access: {
+    urlBasePath: "",
+    imgBasePath: "assets/app/media/img/",
+    entry: "PUBLIC",
+    urlBase: "https://lab.onesaitplatform.com",
+    urlApi: "https://lab.onesaitplatform.com/api-manager/server/api",
+  },
+  app: {
+    appLogo: "assets/app/media/img/logos/COVID-19.png",
+    appLogoCss: "width: auto; max-height: 50px;",
+    appLogoBackground: "background-color: #ffffff",
+    appHome: "COVID-19 Portugal | Dashboard",
+    appLoading: "",
+    appFooter: true,
+    appStickymenu: false,
+    appWelcome: false,
+  },
+  login: {
+    loginLogo: "assets/app/media/img/logos/onesait-platform-logo.png",
+    loginLogoStyle: "",
+    loginBackground: "assets/app/media/img/bg/bg-3.jpg",
+    loginDescription: "Wellcome to onesait Platform",
+    signInTitle: "Please, sign in on onesait:",
+    signInBtnColor: "",
+    signUp: false,
+    forgotPassword: false,
+    rememberMe: false,
+    termsAndConditions: true,
+    agreeInfoMsg: "Please, check the agree Privacy and Terms to access",
+    privacyLink: "",
+    conditionsLink: "",
+  },
+  user: {
+    showAvatar: true,
+    avatar: "assets/app/media/img/users/userAvatar.jpg",
+    profile: { link: "profile.html", text: "ROL", visible: false },
+    support: { link: "support.html", text: "Support", visible: false },
+    activity: { link: "activity.html", text: "Activity", visible: false },
+    messages: { link: "messages.html", text: "Messages", visible: false },
+    faq: { link: "faq.html", text: "FAQ", visible: false },
+    logout: { link: "login.html", text: "Exit", visible: true },
+  },
+  header: {
+    headerDashboads: false,
+    headerReports: false,
+    headerSearch: false,
+    headerNotifications: false,
+    headerQuickactions: false,
+    headerUser: false,
+    headerSidebarToggle: false,
+    headerSessionConfiguration: false,
+  },
+  content: {
+    contentHead: true,
+    contentTools: false,
+    contentTitle: "onesait Platform Community Dashboard",
+    contentHeadCss: "",
+    contentTitleCss: "",
+    contentDashboard: {
+      enabled: true,
+      dashboardName: "COVID-19 PORTUGAL",
+      changeTitle: false,
+      notification: false,
+      src:
+        "https://lab.onesaitplatform.com/controlpanel/dashboards/view/09ad3288-cbfc-4160-87b6-5111c2118450",
+      background: "#FFFFFF",
+      height: "690px",
+      mode: "INSERT",
+    },
+  },
+  footer: {
+    footerCopyright:
+      "2020 &copy; COVID-19 Portugal Dashboards powered by Onesait Platform",
+    footerLinks: true,
+    footerLinkAbout: {
+      link: "https://www.onesaitplatformrevolution.com/",
+      text: "About",
+      visible: false,
+    },
+    footerLinkPrivacy: {
+      link: "privacy.html",
+      text: "Privacy",
+      visible: false,
+    },
+    footerLinkTerms: { link: "terms.html", text: "Terms", visible: false },
+    footerLinkCompany: {
+      link: "https://www.minsait.com/es",
+      text: "Minsait",
+      visible: false,
+    },
+    footerLinkSupport: {
+      link: "support.html",
+      text: "onesait Support Center",
+      visible: false,
+    },
+  },
+  themes: {
+    availableSkin: ["skin-light", "skin-dark"],
+    changeSkin: "skin-light",
+    contentBackground: "ghostwhite",
+    contentPadding: "0px 0px",
+    menu: "",
+    footerBackground: "#0f242c",
+  },
 };
