@@ -43,8 +43,7 @@ var menuJson = {
   rol: "ROLE_DEVELOPER",
   home: false,
   noSession: "login.html",
-  navigation: [
-    {
+  navigation: [{
       title: {
         EN: "Global KPIs",
         PT: "Indicadores Gerais",
@@ -54,8 +53,7 @@ var menuJson = {
       url: "",
       submenu: [],
       dashboard: {
-        src:
-          "https://lab.onesaitplatform.com/controlpanel/dashboards/view/09ad3288-cbfc-4160-87b6-5111c2118450",
+        src: "https://lab.onesaitplatform.com/controlpanel/dashboards/view/09ad3288-cbfc-4160-87b6-5111c2118450",
         title: "COVID-19 PORTUGAL",
         background: "",
         height: "690px",
@@ -72,8 +70,7 @@ var menuJson = {
       url: "",
       submenu: [],
       dashboard: {
-        src:
-          "https://lab.onesaitplatform.com/controlpanel/dashboards/view/23c3d79f-b883-44ed-af78-50d110ae929c",
+        src: "https://lab.onesaitplatform.com/controlpanel/dashboards/view/23c3d79f-b883-44ed-af78-50d110ae929c",
         title: "Dados por Administração Regional de Saúde",
         background: "",
         height: "690px",
@@ -90,8 +87,7 @@ var menuJson = {
       url: "",
       submenu: [],
       dashboard: {
-        src:
-          "https://lab.onesaitplatform.com/controlpanel/dashboards/view/58816d52-0b55-4144-a60f-e16372dccaba",
+        src: "https://lab.onesaitplatform.com/controlpanel/dashboards/view/58816d52-0b55-4144-a60f-e16372dccaba",
         title: "Dados por Concelho",
         background: "",
         height: "690px",
@@ -108,8 +104,7 @@ var menuJson = {
       url: "",
       submenu: [],
       dashboard: {
-        src:
-          "https://lab.onesaitplatform.com/controlpanel/dashboards/view/ff688967-4c00-4e1f-8c99-f1dd108bcbc0",
+        src: "https://lab.onesaitplatform.com/controlpanel/dashboards/view/ff688967-4c00-4e1f-8c99-f1dd108bcbc0",
         title: "Dados por Idade e Sexo",
         background: "",
         height: "690px",
@@ -117,7 +112,53 @@ var menuJson = {
       },
     },
     {
-      title: { EN: "", PT: "", ES: "" },
+      title: {
+        EN: "Data Analytics",
+        PT: "Análise de Dados",
+        ES: "Análisis de Datos",
+      },
+      icon: "fa fa-chart-line",
+      url: "",
+      submenu: [{
+          title: {
+            EN: "Infected",
+            PT: "Infetados 100K/Habit",
+            ES: "Infectados 100K/Habit"
+          },
+          icon: "fa fa-user-plus",
+          url: "",
+          dashboard: {
+            src: "https://lab.onesaitplatform.com/controlpanel/dashboards/view/8363269b-d093-4340-a58c-d49e91327ca3",
+            title: "Análise de Dados (Infetados por 100.000 Habitantes)",
+            background: "",
+            height: "690px",
+            mode: "INSERT",
+          },
+        },
+        {
+          title: {
+            EN: "Deads",
+            PT: "Óbitos 100K/Habit",
+            ES: "Muertes 100K/Habit"
+          },
+          icon: "fa fa-church",
+          url: "",
+          dashboard: {
+            src: "https://lab.onesaitplatform.com/controlpanel/dashboards/view/5de7be0b-f88a-4631-8569-459bf18b345b",
+            title: "Análise de Dados (Óbitos por 100.000 Habitantes)",
+            background: "",
+            height: "690px",
+            mode: "INSERT",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        EN: "",
+        PT: "",
+        ES: ""
+      },
       icon: "",
       url: "",
       submenu: [],
@@ -133,8 +174,7 @@ var menuJson = {
       url: "",
       submenu: [],
       dashboard: {
-        src:
-          "https://lab.onesaitplatform.com/controlpanel/dashboards/view/d733c4d2-6856-47e6-9ebb-6f02e91beae9",
+        src: "https://lab.onesaitplatform.com/controlpanel/dashboards/view/d733c4d2-6856-47e6-9ebb-6f02e91beae9",
         title: "Outras Informações",
         background: "",
         height: "690px",
@@ -326,12 +366,36 @@ var mainJson = {
   user: {
     showAvatar: true,
     avatar: "assets/app/media/img/users/userAvatar.jpg",
-    profile: { link: "profile.html", text: "ROL", visible: false },
-    support: { link: "support.html", text: "Support", visible: false },
-    activity: { link: "activity.html", text: "Activity", visible: false },
-    messages: { link: "messages.html", text: "Messages", visible: false },
-    faq: { link: "faq.html", text: "FAQ", visible: false },
-    logout: { link: "login.html", text: "Exit", visible: true },
+    profile: {
+      link: "profile.html",
+      text: "ROL",
+      visible: false
+    },
+    support: {
+      link: "support.html",
+      text: "Support",
+      visible: false
+    },
+    activity: {
+      link: "activity.html",
+      text: "Activity",
+      visible: false
+    },
+    messages: {
+      link: "messages.html",
+      text: "Messages",
+      visible: false
+    },
+    faq: {
+      link: "faq.html",
+      text: "FAQ",
+      visible: false
+    },
+    logout: {
+      link: "login.html",
+      text: "Exit",
+      visible: true
+    },
   },
   header: {
     headerDashboads: false,
@@ -354,16 +418,14 @@ var mainJson = {
       dashboardName: "COVID-19 PORTUGAL",
       changeTitle: false,
       notification: false,
-      src:
-        "https://lab.onesaitplatform.com/controlpanel/dashboards/view/09ad3288-cbfc-4160-87b6-5111c2118450",
+      src: "https://lab.onesaitplatform.com/controlpanel/dashboards/view/09ad3288-cbfc-4160-87b6-5111c2118450",
       background: "#FFFFFF",
       height: "690px",
       mode: "INSERT",
     },
   },
   footer: {
-    footerCopyright:
-      "2020 &copy; COVID-19 Portugal Dashboards powered by Onesait Platform",
+    footerCopyright: "2020 &copy; COVID-19 Portugal Dashboards powered by Onesait Platform",
     footerLinks: true,
     footerLinkAbout: {
       link: "https://www.onesaitplatformrevolution.com/",
@@ -375,7 +437,11 @@ var mainJson = {
       text: "Privacy",
       visible: false,
     },
-    footerLinkTerms: { link: "terms.html", text: "Terms", visible: false },
+    footerLinkTerms: {
+      link: "terms.html",
+      text: "Terms",
+      visible: false
+    },
     footerLinkCompany: {
       link: "https://www.minsait.com/es",
       text: "Minsait",
