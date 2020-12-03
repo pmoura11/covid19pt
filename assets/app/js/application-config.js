@@ -43,7 +43,8 @@ var menuJson = {
   rol: "ROLE_DEVELOPER",
   home: false,
   noSession: "login.html",
-  navigation: [{
+  navigation: [
+    {
       title: {
         EN: "Global KPIs",
         PT: "Indicadores Gerais",
@@ -53,8 +54,27 @@ var menuJson = {
       url: "",
       submenu: [],
       dashboard: {
-        src: "https://lab.onesaitplatform.com/controlpanel/dashboards/view/09ad3288-cbfc-4160-87b6-5111c2118450",
+        src:
+          "https://lab.onesaitplatform.com/controlpanel/dashboards/view/09ad3288-cbfc-4160-87b6-5111c2118450",
         title: "COVID-19 PORTUGAL",
+        background: "",
+        height: "690px",
+        mode: "INSERT",
+      },
+    },
+    {
+      title: {
+        EN: "Global KPIs Evolution",
+        PT: "Evolução Indicadores Gerais",
+        ES: "Evolución Datos Generales",
+      },
+      icon: "fa fa-chart-area",
+      url: "",
+      submenu: [],
+      dashboard: {
+        src:
+          "https://lab.onesaitplatform.com/controlpanel/dashboards/view/275b21e3-d3e6-437e-adec-04af24d61a7b",
+        title: "Evolução de Indicadores Gerais",
         background: "",
         height: "690px",
         mode: "INSERT",
@@ -68,68 +88,20 @@ var menuJson = {
       },
       icon: "fa fa-map",
       url: "",
-      submenu: [],
-      dashboard: {
-        src: "https://lab.onesaitplatform.com/controlpanel/dashboards/view/23c3d79f-b883-44ed-af78-50d110ae929c",
-        title: "Dados por Administração Regional de Saúde",
-        background: "",
-        height: "690px",
-        mode: "INSERT",
-      },
-    },
-    {
-      title: {
-        EN: "Data by County",
-        PT: "Dados por Concelho",
-        ES: "Datos por Município",
-      },
-      icon: "fa fa-map-marker-alt",
-      url: "",
-      submenu: [],
-      dashboard: {
-        src: "https://lab.onesaitplatform.com/controlpanel/dashboards/view/58816d52-0b55-4144-a60f-e16372dccaba",
-        title: "Dados por Concelho",
-        background: "",
-        height: "690px",
-        mode: "INSERT",
-      },
-    },
-    {
-      title: {
-        EN: "Data by Age/sex",
-        PT: "Dados por Idade/sexo",
-        ES: "Datos por Idad/Sexo",
-      },
-      icon: "fa fa-venus-mars",
-      url: "",
-      submenu: [],
-      dashboard: {
-        src: "https://lab.onesaitplatform.com/controlpanel/dashboards/view/ff688967-4c00-4e1f-8c99-f1dd108bcbc0",
-        title: "Dados por Idade e Sexo",
-        background: "",
-        height: "690px",
-        mode: "INSERT",
-      },
-    },
-    {
-      title: {
-        EN: "Data Analytics",
-        PT: "Análise de Dados",
-        ES: "Análisis de Datos",
-      },
-      icon: "fa fa-chart-line",
-      url: "",
-      submenu: [{
+      submenu: [
+        {
           title: {
-            EN: "Infected",
-            PT: "Infetados 100K/Habit",
-            ES: "Infectados 100K/Habit"
+            EN: "Global KPIs by Region",
+            PT: "Indicadores Gerais por ARS",
+            ES: "Datos Generales por Region",
           },
-          icon: "fa fa-user-plus",
+          icon: "fa fa-map",
           url: "",
+          submenu: [],
           dashboard: {
-            src: "https://lab.onesaitplatform.com/controlpanel/dashboards/view/8363269b-d093-4340-a58c-d49e91327ca3",
-            title: "Análise de Dados (Infetados por 100.000 Habitantes)",
+            src:
+              "https://lab.onesaitplatform.com/controlpanel/dashboards/view/23c3d79f-b883-44ed-af78-50d110ae929c",
+            title: "Dados Gerais por Administração Regional de Saúde",
             background: "",
             height: "690px",
             mode: "INSERT",
@@ -137,15 +109,34 @@ var menuJson = {
         },
         {
           title: {
-            EN: "Deads",
+            EN: "Infected 100K/Citizens",
+            PT: "Infetados 100K/Habit",
+            ES: "Infectados 100K/Habit",
+          },
+          icon: "fa fa-user-plus",
+          url: "",
+          dashboard: {
+            src:
+              "https://lab.onesaitplatform.com/controlpanel/dashboards/view/8363269b-d093-4340-a58c-d49e91327ca3",
+            title:
+              "Análise de Dados por ARS (Infetados por 100.000 Habitantes)",
+            background: "",
+            height: "690px",
+            mode: "INSERT",
+          },
+        },
+        {
+          title: {
+            EN: "Deads 100K/Citizens",
             PT: "Óbitos 100K/Habit",
-            ES: "Muertes 100K/Habit"
+            ES: "Muertes 100K/Habit",
           },
           icon: "fa fa-church",
           url: "",
           dashboard: {
-            src: "https://lab.onesaitplatform.com/controlpanel/dashboards/view/5de7be0b-f88a-4631-8569-459bf18b345b",
-            title: "Análise de Dados (Óbitos por 100.000 Habitantes)",
+            src:
+              "https://lab.onesaitplatform.com/controlpanel/dashboards/view/5de7be0b-f88a-4631-8569-459bf18b345b",
+            title: "Análise de Dados por ARS (Óbitos por 100.000 Habitantes)",
             background: "",
             height: "690px",
             mode: "INSERT",
@@ -155,9 +146,172 @@ var menuJson = {
     },
     {
       title: {
+        EN: "Data by County",
+        PT: "Dados por Concelho",
+        ES: "Datos por Município",
+      },
+      icon: "fa fa-map-marker-alt",
+      url: "",
+      submenu: [
+        {
+          title: {
+            EN: "Global KPIs by County",
+            PT: "Indicadores por Concelho",
+            ES: "Datos Generales por Município",
+          },
+          icon: "fa fa-map-marker-alt",
+          url: "",
+          dashboard: {
+            src:
+              "https://lab.onesaitplatform.com/controlpanel/dashboards/view/58816d52-0b55-4144-a60f-e16372dccaba",
+            title: "Dados por Concelho",
+            background: "",
+            height: "690px",
+            mode: "INSERT",
+          },
+        },{
+          title: {
+            EN: "Comparations by County",
+            PT: "Comparativas por Concelho",
+            ES: "Comparaciones por Município",
+          },
+          icon: "fa fa-map-marker-alt",
+          url: "",
+          dashboard: {
+            src:
+              "https://lab.onesaitplatform.com/controlpanel/dashboards/view/10957081-58f8-43bb-a902-002993a239ad",
+            title: "Análise de Dados Comparativa por Concelho",
+            background: "",
+            height: "690px",
+            mode: "INSERT",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        EN: "Data by Age/sex",
+        PT: "Dados por Idade/sexo",
+        ES: "Datos por Idad/Sexo",
+      },
+      icon: "fa fa-venus-mars",
+      url: "",
+      submenu: [
+        {
+          title: {
+            EN: "Global KPIs by Age/sex",
+            PT: "Indicadores por Idade/sexo",
+            ES: "Datos Generales por Idad/Sexo",
+          },
+          icon: "fa fa-venus-mars",
+          url: "",
+          submenu: [],
+          dashboard: {
+            src:
+              "https://lab.onesaitplatform.com/controlpanel/dashboards/view/ff688967-4c00-4e1f-8c99-f1dd108bcbc0",
+            title: "Dados Globais por Idade e Sexo",
+            background: "",
+            height: "690px",
+            mode: "INSERT",
+          },
+        },
+        {
+          title: {
+            EN: "Infected 100K/Persons",
+            PT: "Infetados 100K/Pessoas",
+            ES: "Infectados 100K/Personas",
+          },
+          icon: "fa fa-user-plus",
+          url: "",
+          dashboard: {
+            src:
+              "https://lab.onesaitplatform.com/controlpanel/dashboards/view/a43b4d4c-60ed-4940-97bd-db017b2626ed",
+            title:
+              "Análise de Dados por Faixa Etária (Infetados por 100.000 Pessoas)",
+            background: "",
+            height: "690px",
+            mode: "INSERT",
+          },
+        },
+        {
+          title: {
+            EN: "Deads 100K/Persons",
+            PT: "Óbitos 100K/Pessoas",
+            ES: "Muertes 100K/Personas",
+          },
+          icon: "fa fa-church",
+          url: "",
+          dashboard: {
+            src:
+              "https://lab.onesaitplatform.com/controlpanel/dashboards/view/8bb8c18e-4a61-476d-9246-5b08af58205f",
+            title:
+              "Análise de Dados por Faixa Etária (Óbitos por 100.000 Pessoas)",
+            background: "",
+            height: "690px",
+            mode: "INSERT",
+          },
+        },
+      ],
+    },
+    {
+      title: {
+        EN: "Effective Reproduction Number",
+        PT: "Índice de Reprodução Efetivo",
+        ES: "N.º Reproducción Instantáneo",
+      },
+      icon: "fa fa-chart-line",
+      url: "",
+      submenu: [],
+      dashboard: {
+        src:
+          "https://lab.onesaitplatform.com/controlpanel/dashboards/view/d3fd57fe-cd90-4888-91a3-1258b2007694",
+        title: "Índice de Reprodução Efetivo - R(t)",
+        background: "",
+        height: "690px",
+        mode: "INSERT",
+      },
+    },
+    {
+      title: {
+        EN: "Data by Tests",
+        PT: "Dados por Amostras",
+        ES: "Datos por Pruebas",
+      },
+      icon: "fa fa-flask",
+      url: "",
+      submenu: [],
+      dashboard: {
+        src:
+          "https://lab.onesaitplatform.com/controlpanel/dashboards/view/4a073775-0d42-4b2d-bc6d-6c5eddbb658e",
+        title: "Dados por Amostras",
+        background: "",
+        height: "690px",
+        mode: "INSERT",
+      },
+    },
+    {
+      title: {
+        EN: "Hospitalizations and Lethality",
+        PT: "Internamentos e Letalidade",
+        ES: "Hospitalizaciones y Letalidad",
+      },
+      icon: "fa fa-ambulance",
+      url: "",
+      submenu: [],
+      dashboard: {
+        src:
+          "https://lab.onesaitplatform.com/controlpanel/dashboards/view/85e21685-067b-4233-a294-94bcd568d7ae",
+        title: "Rácios de Internamentos e Letalidade",
+        background: "",
+        height: "690px",
+        mode: "INSERT",
+      },
+    },
+    {
+      title: {
         EN: "",
         PT: "",
-        ES: ""
+        ES: "",
       },
       icon: "",
       url: "",
@@ -174,7 +328,8 @@ var menuJson = {
       url: "",
       submenu: [],
       dashboard: {
-        src: "https://lab.onesaitplatform.com/controlpanel/dashboards/view/d733c4d2-6856-47e6-9ebb-6f02e91beae9",
+        src:
+          "https://lab.onesaitplatform.com/controlpanel/dashboards/view/d733c4d2-6856-47e6-9ebb-6f02e91beae9",
         title: "Outras Informações",
         background: "",
         height: "690px",
@@ -369,32 +524,32 @@ var mainJson = {
     profile: {
       link: "profile.html",
       text: "ROL",
-      visible: false
+      visible: false,
     },
     support: {
       link: "support.html",
       text: "Support",
-      visible: false
+      visible: false,
     },
     activity: {
       link: "activity.html",
       text: "Activity",
-      visible: false
+      visible: false,
     },
     messages: {
       link: "messages.html",
       text: "Messages",
-      visible: false
+      visible: false,
     },
     faq: {
       link: "faq.html",
       text: "FAQ",
-      visible: false
+      visible: false,
     },
     logout: {
       link: "login.html",
       text: "Exit",
-      visible: true
+      visible: true,
     },
   },
   header: {
@@ -418,14 +573,16 @@ var mainJson = {
       dashboardName: "COVID-19 PORTUGAL",
       changeTitle: false,
       notification: false,
-      src: "https://lab.onesaitplatform.com/controlpanel/dashboards/view/09ad3288-cbfc-4160-87b6-5111c2118450",
+      src:
+        "https://lab.onesaitplatform.com/controlpanel/dashboards/view/09ad3288-cbfc-4160-87b6-5111c2118450",
       background: "#FFFFFF",
       height: "690px",
       mode: "INSERT",
     },
   },
   footer: {
-    footerCopyright: "2020 &copy; COVID-19 Portugal Dashboards powered by Onesait Platform",
+    footerCopyright:
+      "2020 &copy; COVID-19 Portugal Dashboards powered by Onesait Platform",
     footerLinks: true,
     footerLinkAbout: {
       link: "https://www.onesaitplatformrevolution.com/",
@@ -440,7 +597,7 @@ var mainJson = {
     footerLinkTerms: {
       link: "terms.html",
       text: "Terms",
-      visible: false
+      visible: false,
     },
     footerLinkCompany: {
       link: "https://www.minsait.com/es",
